@@ -157,7 +157,7 @@ const ProfileButton = ({ signinOpen, setSigninOpen }) => {
                                         passHref
                                     >
                                         <a>
-                                            <Menu.Item onClick={item.onClick}>
+                                            <Menu.Item>
                                                 {({ active }) => (
                                                     <span
                                                         className={classNames(
@@ -226,7 +226,7 @@ const ProfileButton = ({ signinOpen, setSigninOpen }) => {
                             {notSignedInNav.map((item) => (
                                 <Link href={item.link} key={item.text} passHref>
                                     <a>
-                                        <Menu.Item onClick={item.onClick}>
+                                        <Menu.Item>
                                             {({ active }) => (
                                                 <span
                                                     className={classNames(
