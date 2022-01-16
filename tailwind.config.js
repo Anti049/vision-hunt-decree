@@ -9,6 +9,9 @@ module.exports = {
             fontFamily: {
                 sans: ['Genshin', 'sans-serif'],
                 serif: ['Poppins', 'sans-serif'],
+                mono: ['FiraCode NF', 'monospace'],
+                title: ['Genshin', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
             },
             colors: {
                 background: '#202442',
@@ -16,6 +19,7 @@ module.exports = {
                 item: '#2D325A',
                 primary: '#4E7CFF',
                 navigation: '#4E7CFFCC',
+                'navigation-hover': '#4E7CFF66',
                 button: '#394076',
                 rare: {
                     from: '#D28FD6',
@@ -24,6 +28,12 @@ module.exports = {
                 legendary: {
                     from: '#FFB13F',
                     to: '#846332',
+                },
+                dracula: {
+                    darker: {
+                        default: '#282A36',
+                        50: '#CDD0E4',
+                    },
                 },
             },
             borderRadius: {
@@ -42,6 +52,15 @@ module.exports = {
             width: {
                 14: '3.5rem',
             },
+            spacing: {
+                '32px': '32px',
+            },
+            backgroundImage: {
+                'emblem-pattern': 'url(/images/1024x1024.png)',
+            },
+            screens: {
+                tablet: '1000px',
+            },
         },
     },
     plugins: [
@@ -49,5 +68,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
+        require('tailwind-dracula')(),
     ],
 }
